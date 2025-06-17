@@ -1,0 +1,10 @@
+{
+  "name": "my-devops-app",
+  "version": "1.0.0",
+  "description": "Simple Node.js App for DevOps CI/CD Pipeline",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {}
+}
