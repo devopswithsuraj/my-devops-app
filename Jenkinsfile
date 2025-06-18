@@ -34,7 +34,7 @@ pipeline {
         success {
             mail to: 'devopswithsuraj@gmail.com',
                 subject: "✅ SUCCESS: ${env.JOB_NAME} [#${env.BUILD_NUMBER}]",
-                body: "The deployment was successful.\n\nView it here: ${env.BUILD_URL}"
+                body: "The deployment of project was successful.\n\nView it here: ${env.BUILD_URL}"
         }
 
         failure {
