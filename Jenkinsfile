@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git branch: 'main', url: 'https://github.com/devopswithsuraj/my-devops-app.git'
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'webhookwebhook', url: 'https://github.com/devopswithsuraj/my-devops-app.git']])
             }
         }
 
